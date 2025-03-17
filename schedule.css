@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 135px;
+    background-color: #29a2e0;
+    color: white;
+    padding-top: 15px;
+  }
+  
+  .profile-circle {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+  
+  .menu-item1 {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    margin-top: 60px;
+   
+  }
+
+  .menu-item1 a{
+    color: #ffff;
+  }
+
+  .menu-item a{
+    color: #ffff;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+   
+  }
+
+  .menu-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  .header {
+    background-color: #29a2e0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .search-bar {
+    width: 60%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+  
+  .user-icon img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.today-btn {
+    background-color: #8efa8e;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.month-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-arrow {
+    cursor: pointer;
+}
+
+.view-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.calendar-container {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    overflow: hidden; 
+    max-width: auto;
+  }
+  
+  .days-header {
+    display: grid;
+    grid-template-columns: 60px repeat(7, 1fr);
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .day-cell {
+    padding: 8px;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .day-name {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .day-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  
+  .time-grid {
+    display: grid;
+    grid-template-columns: 60px repeat(7, 1fr);
+    grid-auto-rows: 50px;
+  }
+  
+  .time-label {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    padding-right: 12px;
+    border-right: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .time-cell {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  
+  .event {
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 12px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .event.blue {
+    background-color: #2196F3;
+  }
+  
+  .event.red {
+    background-color: #E57373;
+  }
+  
+  .event.purple {
+    background-color: #673AB7;
+  }
+  
+  .event.green {
+    background-color: #4CAF50;
+  }
+  
+  .event.yellow {
+    background-color: #DCE775;
+    color: #333;
+  }
+  
+  .time-header {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .add-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 24px;
+  }

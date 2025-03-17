@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-circle"></div>
+        <div class="menu-item active">
+          <span class="menu-icon">🏠</span>
+          <a href="Admin_dashboard.html">Home</a>
+        </div>
+        <div class="menu-item">
+          <span class="menu-icon">📅</span>
+          <a href="Admin_schedule.html">Schedule</a>
+        </div>
+        <div class="menu-item">
+          <span class="menu-icon">📝</span>
+          <a href="Admin_class.html">Class</a>
+        </div>
+      </div>
+      
+      <div class="main-content">
+        <div class="header">
+          <div class="search-bar"></div>
+          <div class="user-icon">
+            <div class="user-icon-inner">
+                <img src="userpic.png">
+            </div>
+          </div>
+        </div>
+        
+        <div class="stats-cards">
+          <div class="card">
+            <div class="card-title">English</div>
+            <div class="stats-label">
+              <span>Attendance rate</span>
+              <span>88%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress english"></div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-title">Math</div>
+            <div class="stats-label">
+              <span>Attendance rate</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress math"></div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-title">Filipino</div>
+            <div class="stats-label">
+              <span>Attendance rate</span>
+              <span>92%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress filipino"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="year-selector">
+            <span>
+                <label for="dropdown">School Year:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" disabled selected>choose year </option>
+                    <option value="option1">2024-2025</option>
+                    <option value="option2">2023-2024</option>
+                    <option value="option3">2022-2023</option>
+                    <option value="option4">2021-2022</option>
+                </select>
+            </span>
+        </div>
+        
+        <div class="chart-container">
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #4cd964;"></div>
+              <span>Present</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ff6b6b;"></div>
+              <span>Absent</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: #ffcc00;"></div>
+              <span>Excused</span>
+            </div>
+          </div>
+          
+          <div style="display: flex;">
+            <div class="y-axis">
+              <span>100</span>
+              <span>80</span>
+              <span>60</span>
+              <span>40</span>
+              <span>20</span>
+              <span>0</span>
+            </div>
+            
+            <div class="chart">
+              <div class="chart-column">
+                <div class="bar-group">
+                  <div class="bar present" style="height: 155px;"></div>
+                  <div class="bar absent" style="height: 20px;"></div>
+                  <div class="bar excused" style="height: 10px;"></div>
+                </div>
+                <div class="bar-label">Grade 10</div>
+              </div>
+              
+              <div class="chart-column">
+                <div class="bar-group">
+                  <div class="bar present" style="height: 140px;"></div>
+                  <div class="bar absent" style="height: 35px;"></div>
+                  <div class="bar excused" style="height: 25px;"></div>
+                </div>
+                <div class="bar-label">Grade 11</div>
+              </div>
+              
+              <div class="chart-column">
+                <div class="bar-group">
+                  <div class="bar present" style="height: 130px;"></div>
+                  <div class="bar absent" style="height: 45px;"></div>
+                  <div class="bar excused" style="height: 25px;"></div>
+                </div>
+                <div class="bar-label">Grade 12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
